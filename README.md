@@ -1,32 +1,64 @@
-# Crime Record Management System
+Crime Record System
+===================
 
-A console-based Java application for managing criminal records, complaints, and FIR registrations. Designed for use by police departments to streamline record-keeping and complaint processing.
+Project Structure:
+------------------
+src
+├── main               # Application entry point
+│   └── CrimeRecordSystem.java
+├── dao                # Database operations
+│   ├── CriminalDAO.java
+│   ├── ComplaintDAO.java
+│   └── UserDAO.java
+├── model              # Data entities
+│   ├── Criminal.java
+│   └── Complaint.java
+└── util               # Utilities
+    └── DatabaseConnection.java
 
-## Features
+Overview:
+---------
+The Crime Record System is a Java-based application designed to manage and track criminal records and complaints efficiently.
 
-- **User Authentication**:  
-  - Admin and regular user roles.
-  - Admins can add criminals and convert complaints to FIRs.
-- **Criminal Management** (Admin-only):  
-  - Add criminal records with details like crime type, date, and punishment.
-- **Complaint Management**:  
-  - File complaints with incident descriptions and dates.
-  - View pending complaints.
-  - Convert valid complaints to FIRs (Admin-only).
-- **Database Integration**:  
-  - MySQL backend for data persistence.
+Features:
+---------
+- Add, update, and delete criminal records
+- Register and track complaints
+- User authentication and role-based access control
+- Database integration for data persistence
 
-## Prerequisites
+Technologies Used:
+------------------
+- Java
+- JDBC (Java Database Connectivity)
+- MySQL (or any relational database)
+- MVC (Model-View-Controller) Architecture
 
-- Java JDK 8 or later
-- MySQL Server
-- MySQL Connector/J (included in project dependencies)
+Setup Instructions:
+-------------------
+1. Clone the Repository  
+   git clone https://github.com/DibyaSinha/Crime-Management-System.git  
+   cd CrimeRecordSystem  
 
-## Installation & Setup
+2. Configure Database  
+   - Create a MySQL database.  
+   - Update DatabaseConnection.java with your database credentials.  
 
-### 1. Database Setup
+3. Run the Application  
+   - Compile and execute CrimeRecordSystem.java  
+     javac src/main/CrimeRecordSystem.java  
+     java src/main/CrimeRecordSystem  
 
-1. Create a MySQL database named `crime_db`:
-   ```sql
-   CREATE DATABASE crime_db;
-   USE crime_db;
+Future Enhancements:
+--------------------
+- Implement a graphical user interface (GUI).  
+- Add reporting and analytics features.  
+- Improve security with encryption for sensitive data.  
+
+Contributing:
+-------------
+Feel free to fork this repository and contribute! Submit a pull request for review.  
+
+License:
+--------
+This project is licensed under the MIT License.

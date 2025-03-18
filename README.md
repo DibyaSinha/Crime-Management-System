@@ -53,11 +53,7 @@ Future Enhancements:
 --------------------
 - Implement a graphical user interface (GUI).  
 - Add reporting and analytics features.  
-- Improve security with encryption for sensitive data.  
-
-Contributing:
--------------
-Feel free to fork this repository and contribute! Submit a pull request for review.  
+- Improve security with encryption for sensitive data.   
 
 License:
 --------
